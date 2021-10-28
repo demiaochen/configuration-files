@@ -1,5 +1,5 @@
 # configuration-files
 
-## powershell
-## .zshrc
-## autohotkey .ahk
+* powershell
+* .zshrc
+* autohotkey .ahk
