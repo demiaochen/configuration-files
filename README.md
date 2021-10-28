@@ -1,1 +1,4 @@
 # configuration-files
+
+powershell
+.zshrc
