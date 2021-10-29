@@ -24,7 +24,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !+z::Send ^+z
 !+t::Send ^+t
 
-$!q::Send !{f4}
+; Search Apps
+!Space::send #q
+
+; swap alt click and ctrl click
+ALT & LBUTTON::send {ctrl down}{LButton}{ctrl up}
+CTRL & LBUTTON::send {alt down}{LButton}{alt up}
 
 
 ; Navigation using of bigger chunks (Skip to start/end of line/paragraph/document)
