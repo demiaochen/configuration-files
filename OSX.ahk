@@ -3,6 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; alt to ctrl
 !c::Send, ^c 
 !v::Send, ^v
 !x::Send, ^x
@@ -23,6 +24,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 !+z::Send ^+z
 !+t::Send ^+t
+
+; cmd+q
+!q::Send !{f4}
 
 ; Search Apps
 !Space::send #q
