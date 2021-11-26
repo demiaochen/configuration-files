@@ -1,0 +1,26 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = derek chen
+	email = noreplay@nowhere.no
+[core]
+	editor = code --wait
+	autocrlf = input
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[push]
+	default = simple
+	rebase = true
+[https]
+	proxy = socks5://127.0.0.1:4781
+	sslVerify = false
+	sslBackend = openssl
+[http]
+	proxy = socks5://127.0.0.1:4781
+	sslVerify = false
+	sslBackend = openssl
