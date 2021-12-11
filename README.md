@@ -3,3 +3,4 @@
 * powershell
 * .zshrc
 * autohotkey .ahk
+* .gitconfig
